@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 README: code for \'93\cf2 \expnd0\expndtw0\kerning0
+A Computational Model for Pain Processing in the Dorsal Horn Following Axonal Damage to Receptor Fibers\'94\
+\
+To run simulation, open and run 
+\f1\b damageFibers.m. 
+\f0\b0 Within this code, you can change parameters such as the percentage of fibers to damage, the type of injury, and any parameter within each injury type. This code will create .mat files saving the firing rate of each population for each realization.\
+\
+\
+The main code calls on several functions. Here is a list of the important functions and their purpose:\
+\
+
+\f1\b damageAndRunDE.m: 
+\f0\b0 This holds all parameter values for the circuit model and runs the successive functions for simulating the pain processing model from Crodelle 2019.\
+\
+
+\f1\b createSpikes.m: 
+\f0\b0 This code calculates the Poisson spikes for the fibers.\
+\
+
+\f1\b diagnostics.m: 
+\f0\b0 this code calculates the quantitative markers discussed in Fig 3.\
+\
+
+\f1\b DHmodelDiffEq.m: 
+\f0\b0 this holds the equations for the derivatives for the pain model. This will be passed into ode45 to numerical approximate solutions.\
+\
+
+\f1\b plot_pain.m:
+\f0\b0  this takes in the .mat files created in the simulation and plots the average and standard deviation across trials. }
